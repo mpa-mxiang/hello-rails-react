@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { fetchRandomGreeting } from '../redux/actions';
 
-const Greeting = () => {
-  const [greeting, setGreeting] = useState('');
-
+const Greeting = ({ randomGreeting, fetchRandomGreeting }) => {
   useEffect(() => {
-    axios.get('/api/greetings/random')
-      .then(response => setGreeting(response.data.greeting))
-      .catch(error => console.error(error));
-  }, []);
+    fetchRandomGreeting();
+  }, [fetchRandomGreeting]);
 
   return (
     <div>
-      <h1>{greeting}</h1>
+      <h1>{randomGreeting}</h1>
     </div>
   );
 };
 
-export default Greeting;
+const mapStateToProps = state => {
+  return {
+    randomGreeting: state.randomGreeting,
+  };
+};
+
+export default connect(mapStateToProps, { fetchRandomGreeting })(Greeting);
