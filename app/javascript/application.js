@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Greeting from './components/Greeting';
+import store from '../redux/store';
+import Greeting from '../components/Greeting';
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/greeting" component={Greeting} />
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <Route path="/greeting" component={Greeting} />\
+        </Switch>
+      </Router>
+    </Provider>
   );
 };
 
