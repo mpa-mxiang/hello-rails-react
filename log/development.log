@@ -188,3 +188,39 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 131ms (Views: 125.6ms | ActiveRecord: 0.0ms | Allocations: 71712)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-24 22:48:28 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2211)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2508)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-24 22:49:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 20677)
+Completed 200 OK in 34ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 24730)
+
+
+Started GET "/index" for 127.0.0.1 at 2023-11-24 22:50:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/home" for 127.0.0.1 at 2023-11-24 22:50:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-24 22:50:32 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2205)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2481)
+
+
