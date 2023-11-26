@@ -1,0 +1,18 @@
+Started GET "/" for 127.0.0.1 at 2023-11-25 20:30:25 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 442)
+  Rendered layout layouts/application.html.erb (Duration: 174.5ms | Allocations: 71982)
+Completed 200 OK in 189ms (Views: 179.0ms | ActiveRecord: 0.0ms | Allocations: 78548)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-25 20:39:31 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 131.4ms | Allocations: 20388)
+Completed 200 OK in 147ms (Views: 134.2ms | ActiveRecord: 0.0ms | Allocations: 24445)
+
+
